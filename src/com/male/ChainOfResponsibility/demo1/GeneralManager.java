@@ -1,4 +1,4 @@
-package com.male.ChainOfResponsibility;
+package com.male.ChainOfResponsibility.demo1;
 
 public class GeneralManager extends Approver{
 
