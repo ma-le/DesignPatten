@@ -1,4 +1,4 @@
-package com.male.ObserverPatten;
+package com.male.ObserverPattern;
 
 public class test {
 
