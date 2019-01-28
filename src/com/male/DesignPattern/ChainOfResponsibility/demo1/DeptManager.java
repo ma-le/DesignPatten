@@ -6,9 +6,9 @@ public class DeptManager extends Approver{
 	public void ApproverRequest(Integer amount) {
 		// TODO Auto-generated method stub
 		if(10000 < amount && amount <= 15000){
-			System.out.println("²¿ÃÅ¾­ÀíÉóÅúÍ¨¹ý¡î¡î¡î¡î¡î");
+			System.out.println("éƒ¨é—¨ç»ç†å®¡æ‰¹é€šè¿‡â˜†â˜†â˜†â˜†â˜†");
 		}else{
-			System.out.println("²¿ÃÅ¾­ÀíÎÞÈ¨ÉóÅú");
+			System.out.println("éƒ¨é—¨ç»ç†æ— æƒå®¡æ‰¹");
 			getRightApprover().ApproverRequest(amount);
 		}
 	}
