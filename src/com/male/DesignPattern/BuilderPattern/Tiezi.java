@@ -7,4 +7,7 @@ public class Tiezi {
      * builder时就直接返回属性（实体本身）
      */
     //https://blog.csdn.net/liujun03/article/details/82789704
+    //https://blog.csdn.net/Arthurs_L/article/details/81287128
+
+    //http://c.biancheng.net/view/1354.html
 }
