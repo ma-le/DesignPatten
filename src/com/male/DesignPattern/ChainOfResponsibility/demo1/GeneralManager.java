@@ -6,7 +6,7 @@ public class GeneralManager extends Approver{
 	public void ApproverRequest(Integer amount) {
 		// TODO Auto-generated method stub
 		if(amount > 15000){
-			System.out.println("×Ü¾­ÀíÉóÅúÍ¨¹ı¡î¡î¡î¡î¡î");
+			System.out.println("æ€»ç»ç†å®¡æ‰¹é€šè¿‡â˜†â˜†â˜†â˜†â˜†");
 		}
 	}
 }

@@ -6,9 +6,9 @@ public class ProjectManager extends Approver{
 	public void ApproverRequest(Integer amount) {
 		// TODO Auto-generated method stub
 		if(0 < amount && amount <= 10000){
-			System.out.println("项目经理审批通过☆☆☆☆☆");
+			System.out.println("椤圭洰缁忕悊瀹℃牳閫氳繃");
 		}else{
-			System.out.println("项目经理无权审批 ");
+			System.out.println("椤圭洰缁忕悊鏃犳潈瀹℃壒 ");
 			getRightApprover().ApproverRequest(amount);
 		}
 	}
