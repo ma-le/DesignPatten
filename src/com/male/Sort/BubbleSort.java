@@ -8,7 +8,7 @@ public class BubbleSort {
 
     public static void main(String[] args) {
 
-        int[] a = {9,9,6,5,4,1,4,7,4,8,5,4,5,3,1,4,8};
+        int[] a = {6,2,1,4,8,9,7,3,5};
         bubble(a);
         for (int aa : a){
             System.out.print(aa);
@@ -17,8 +17,36 @@ public class BubbleSort {
     }
 
     public static void bubble(int [] nums){
-        int temp = 0;
-        int size = nums.length;
+
+
+//        for (int i = 0; i < nums.length - 1; i++){
+//            for (int j = 0; j < nums.length - 1 - i; j++){
+//                if(nums[j] > nums[j + 1]){
+//                    int temp = nums[j];
+//                    nums[j] = nums[j + 1];
+//                    nums[j + 1] = temp;
+//                }
+//            }
+//        }
+
+        for(int i = nums.length - 1; i > 0; i--){
+            for (int j = nums.length - 1; j > nums.length - 1 - i; j--){
+                if(nums[j] < nums[j - 1]){
+                    int temp = nums[j];
+                    nums[j] = nums[j - 1];
+                    nums[j - 1] = temp;
+                }
+            }
+        }
+
+
+
+
+
+
+
+
+
 
 //        for(int i = 0; i < size - 1; i++){
 //            for(int j = 0; j < size - 1 - i; j++){
@@ -30,14 +58,14 @@ public class BubbleSort {
 //            }
 //        }
 
-        for(int i = size - 1; i > 0; i--){
-            for(int j = size - 1; j > size - i - 1; j--){
-                if(nums[j] < nums[j-1]){
-                    temp = nums[j];
-                    nums[j] = nums[j-1];
-                    nums[j-1] = temp;
-                }
-            }
-        }
+//        for(int i = size - 1; i > 0; i--){
+//            for(int j = size - 1; j > size - i - 1; j--){
+//                if(nums[j] < nums[j-1]){
+//                    temp = nums[j];
+//                    nums[j] = nums[j-1];
+//                    nums[j-1] = temp;
+//                }
+//            }
+//        }
     }
 }

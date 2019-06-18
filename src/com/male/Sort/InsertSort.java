@@ -14,19 +14,19 @@ public class InsertSort {
 
     public static void insertsort(int[] arr){
 
+
         int i, j, key;
 
         for(i = 1; i < arr.length; i++){
             j = i;
             key = arr[i];
 
-            while (j > 0 && key < arr[j - 1]){
+            while (j > 0 && key < arr[j-1]){
                 arr[j] = arr[j - 1];
                 j--;
             }
             arr[j] = key;
         }
-
     }
 
 //    int i, j;
