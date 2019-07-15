@@ -19,13 +19,13 @@ public class QuickSort {
 
 
 
-        if(start < end){
+        if (start < end){
             int i = start;
-            int j ;
+            int j;
             int key = arr[start];
 
-            for (j = i + 1; j <= end; j++){
-                if(arr[j] < key){
+            for (j = start + 1; j <= end; j++){
+                if(key > arr[j]){
                     int temp = arr[j];
                     arr[j] = arr[i + 1];
                     arr[i + 1] = temp;
@@ -34,7 +34,6 @@ public class QuickSort {
             }
             arr[start] = arr[i];
             arr[i] = key;
-
             quick(arr, start, i - 1);
             quick(arr, i + 1, end);
         }
