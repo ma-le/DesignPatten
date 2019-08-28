@@ -4,6 +4,15 @@ import java.util.Arrays;
 
 public class BubbleSort {
 
+    private InsertSort insertSort;
+
+    public InsertSort getInsertSort() {
+        return insertSort;
+    }
+
+    public void setInsertSort(InsertSort insertSort){
+        this.insertSort = insertSort;
+    }
     /**
      * 冒泡   从左往右  和   从右往左
      */

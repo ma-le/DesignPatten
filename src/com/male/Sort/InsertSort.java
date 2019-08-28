@@ -4,6 +4,16 @@ import java.util.Arrays;
 
 public class InsertSort {
 
+    private BubbleSort bubbleSort;
+
+    public BubbleSort getBubbleSort() {
+        return bubbleSort;
+    }
+
+    public void setBubbleSort(BubbleSort bubbleSort){
+        this.bubbleSort = bubbleSort;
+    }
+
     public static void main(String[] args) {
 //        int[] a = {9,8,7,6,5,4,3,2,1};
         int[] a = {5,2,6,3};
