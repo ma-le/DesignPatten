@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 创建方式1：空参构造创建 -->
+<!--    <bean name="user" class="com.wisedu.springDemo.User"></bean>-->
+
+<!--    &lt;!&ndash; 创建方式2：静态工厂创建-->
+<!--            调用UserFactory的createUser方法来创建名为User2的对象放入容器-->
+<!--    &ndash;&gt;-->
+<!--    <bean name="user2" class="com.wisedu.createObject.UserFactory" factory-method="createUser"></bean>-->
+
+<!--    &lt;!&ndash; 创建方式3：实例工厂创建-->
+<!--        首先将UserFactory作为普通的bean配置到Spring中，然后再去调用UserFactory对象的createUser2方法-->
+<!--&ndash;&gt;-->
+<!--    <bean name="user3" factory-bean="userFactory" factory-method="createUser2"></bean>-->
+<!--    <bean name="userFactory" class="com.wisedu.createObject.UserFactory"></bean>-->
+
+
+    <bean name="bubbleSort" class="com.male.Sort.BubbleSort">
+        <property name="insertSort" ref="insertSort"></property>
+    </bean>
+
+    <bean name="insertSort" class="com.male.Sort.InsertSort">
+        <property name="bubbleSort" ref="bubbleSort"></property>
+    </bean>
+</beans>
